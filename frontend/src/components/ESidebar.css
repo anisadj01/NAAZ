@@ -1,0 +1,104 @@
+/* Sidebar Employés - Version harmonisée */
+.esidebar {
+    width: 80px; /* Largeur rétractée 
+    background-color: #f8f9fa; /* Gris clair  */
+    padding: 20px 10px;
+    color: #333; /* Texte foncé  */
+    height: 100vh;
+    transition: width 0.3s ease-in-out; /* Même transition */
+    border-right: 2px solid #ddd; /* Bordure  */
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.esidebar.expanded {
+    width: 220px; /* Largeur déployée  */
+}
+
+.esidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px; /* Espacement réduit pour correspondre */
+}
+
+.esidebar-logo {
+    width: 40px;
+    height: auto;
+    transition: width 0.3s; /* Transition  */
+}
+
+.esidebar.expanded .esidebar-logo {
+    width: 120px; /* Taille étendue  */
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #333; /* Couleur texte  */
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s; /* Transition hover */
+}
+
+.toggle-btn:hover {
+    color: #b52b3b; /* Rouge   au hover  */
+}
+
+.esidebar-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.esidebar-item {
+    margin-bottom: 0; /* Enlever l'espacement supplémentaire */
+    width: 100%;
+}
+
+.esidebar-item a,
+.esidebar-item button {
+    display: flex;
+    align-items: center;
+    color: #333; /* Texte foncé */
+    text-decoration: none;
+    padding: 12px 16px; /* Même padding que la première */
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, color 0.3s; /* Transitions identiques */
+}
+
+.esidebar-item .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.esidebar-item span {
+    display: none;
+}
+
+.esidebar.expanded .esidebar-item span {
+    display: inline;
+}
+
+.esidebar-item a:hover,
+.esidebar-item button:hover {
+    background: #dc3545; /* Rouge   comme hover de la première */
+    color: white; /* Texte blanc au hover */
+}
+
+.esidebar-item.logout button {
+    color: #333; /* Texte normal */
+    margin-top: auto; /* Positionnement  */
+}
+
+.esidebar-item.logout button:hover {
+    background: #dc3545; /* Rouge   au hover */
+    color: white;
+}

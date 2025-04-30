@@ -1,0 +1,102 @@
+/* Sidebar Container */
+.sidebar {
+  width: 80px; /* Taille réduite par défaut */
+  height: 100vh;
+  background: #f8f9fa; /* Gris clair */
+  border-right: 2px solid #ddd;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar.expanded {
+  width: 220px; /* Taille élargie */
+}
+
+/* Header avec le bouton Toggle */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: auto;
+  transition: width 0.3s;
+}
+
+.sidebar.expanded .sidebar-logo {
+  width: 120px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  color: #b52b3b; /* Rouge doux */
+}
+
+/* Sidebar Links */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-item {
+  width: 100%;
+}
+
+.sidebar-item a,
+.sidebar-item button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 12px 16px;
+  transition: background 0.3s, color 0.3s;
+  width: 100%;
+}
+
+.sidebar-item a:hover,
+.sidebar-item button:hover {
+  background: #dc3545; /* Rouge doux */
+  color: white;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cacher les textes dans les items quand la sidebar est fermée */
+.sidebar:not(.expanded) .sidebar-item a span,
+.sidebar:not(.expanded) .sidebar-item button span {
+  display: none;
+}
+
+/* Logout item */
+.sidebar-item.logout {
+  margin-top: auto;
+}

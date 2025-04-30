@@ -1,0 +1,69 @@
+.ed-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.ed-content {
+  padding: 10px;
+  flex: 1;
+  background-color: #f0f2f5;
+  max-width: 100%; /* Réduire la largeur du contenu */
+  margin-left: 280px; /* Pousser le contenu à droite */
+  margin-right: 0; /* Pas de marge à droite */
+}
+
+.dashboard-header {
+
+}
+
+.dashboard-header h2 {
+text-align: center;
+}
+
+.dashboard-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: #ff4d4f;
+  margin-bottom: 15px;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 160px;
+}
+
+.mission-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.mission-info h3 {
+  margin: 0 0 10px 0;
+  color: #1a3c34;
+  font-size: 1.4em;
+}
+
+.mission-info p {
+  margin: 5px 0;
+  color: #595959;
+}
+
+.mission-info p strong {
+  color: #333;
+}

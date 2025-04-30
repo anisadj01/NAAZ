@@ -1,0 +1,132 @@
+.gestion-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.gestion-search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gestion-form input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gestion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.gestion-table th,
+.gestion-table td {
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-align: center;
+}
+
+.gestion-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.gestion-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gestion-btn-edit,
+.gestion-btn-delete {
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.gestion-btn-edit {
+    background-color: #4CAF50; /* Bleu */
+    color: white;
+}
+
+.gestion-btn-delete {
+    background-color: #F44336; /* Rouge */
+    color: white;
+}
+
+.gestion-btn-edit:hover {
+    background-color: #45a049;
+}
+
+.gestion-btn-delete:hover {
+    background-color: #e53935;
+}
+
+.btn-toggle-form {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #d52525;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-toggle-form:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+    margin: 10px 0;
+}
+
+.btn-add {
+    background-color: #d52525;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .gestion-container {
+        padding: 15px;
+    }
+
+    .gestion-table th,
+    .gestion-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .gestion-btn-edit,
+    .gestion-btn-delete {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}

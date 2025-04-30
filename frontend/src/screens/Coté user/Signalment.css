@@ -1,0 +1,40 @@
+.signalment-container {
+    max-width: 500px;
+    margin-left: 200px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  .signalment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signalment-form textarea {
+    resize: vertical;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    min-height: 100px;
+    background-color: #2e2e2e;
+    color: white;
+  }
+  
+  .signalment-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .message {
+    margin-top: 15px;
+    color: lightgreen;
+  }
+  

@@ -1,0 +1,335 @@
+.mission-container {
+    padding: 20px;
+    color: #333;
+    margin-left: 200px;
+    max-width: calc(100% - 200px);
+  }
+  
+  .mission-form {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+  }
+  
+  .mission-form input,
+  .mission-form select {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .mission-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .mission-table th,
+  .mission-table td {
+    border: 1px solid #000;
+    padding: 6px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .mission-table th:nth-child(1),
+  .mission-table td:nth-child(1) {
+    min-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .mission-table th:nth-child(2),
+  .mission-table td:nth-child(2) {
+    min-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .mission-table th:nth-child(3),
+  .mission-table td:nth-child(3) {
+    min-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .mission-table th:nth-child(4),
+  .mission-table td:nth-child(4) {
+    min-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .mission-table th:nth-child(5),
+  .mission-table td:nth-child(5) {
+    min-width: 150px;
+    overflow: visible;
+    white-space: nowrap;
+  }
+  
+  .mission-table th {
+    background: #f4f4f4;
+  }
+  
+  .mission-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .mission-btn-details,
+  .mission-btn-edit,
+  .mission-btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .mission-btn-details {
+    color: #17a2b8;
+  }
+  
+  .mission-btn-edit {
+    color: #007BFF;
+  }
+  
+  .mission-btn-delete {
+    color: #f44336;
+  }
+  
+  .mission-btn-add,
+  .mission-btn-cancel,
+  .mission-btn-toggle {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .mission-btn-add {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .mission-btn-cancel {
+    background: #f44336;
+    color: white;
+  }
+  
+  .mission-btn-toggle {
+    background: #007BFF;
+    color: white;
+  }
+  
+  .mission-search {
+    padding: 6px;
+    width: 180px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .mission-details-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .mission-details-content {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ordre-mission {
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-placeholder {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px dashed #000;
+  }
+  
+  .company-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .title-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .number-section {
+    text-align: right;
+  }
+  
+  .numero {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  .s1-box {
+    border: 2px solid #000;
+    padding: 5px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .section-1,
+  .section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .section-1 .field,
+  .section-2 .field {
+    width: 48%;
+  }
+  
+  .field label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .field span {
+    display: block;
+    padding: 5px;
+    border: 1px solid #000;
+    min-height: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .section-3-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .section-3-table th,
+  .section-3-table td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .section-3-table th {
+    font-weight: bold;
+    background: #f4f4f4;
+  }
+  
+  .parcours-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .parcours-row span {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .parcours-row span:not(:first-child) {
+    margin-left: 5px;
+  }
+  
+  .signatures-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-top: 2px solid #000;
+  }
+  
+  .signatures-table th,
+  .signatures-table td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .signatures-table th {
+    font-weight: bold;
+  }
+  
+  .signatures-table .signature-box {
+    height: 130px;
+    border: 1px solid #000;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .exemplaire {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .mission-btn-print {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
